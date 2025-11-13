@@ -1,6 +1,6 @@
 package Encapsulation;
 class Student{
-  private String name;
+  private String name; 
     private int age;
     public void setValue(String name){
         this.name=name;
