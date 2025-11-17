@@ -5,6 +5,13 @@ public class HashMap1 {
         Map <Integer, Character> map=new HashMap<>();
         map.put(1, 'A');
         map.put(2, 'M');
-        System.out.println(map);
+        map.put(3, 'A');
+         map.put(4, 'N');
+         for (Integer i : map.keySet()) {
+            System.out.println(i+"->"+map.get(i));
+         }
+        // System.out.println(map);
+        System.out.println(map.containsValue('A'));
+        System.out.println(map.containsKey(5));
     }
 }
