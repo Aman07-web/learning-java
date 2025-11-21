@@ -10,9 +10,17 @@ public class Create_array {
         for (int i = 0; i < arr.length; i++) {
            arr[i]=sc.nextInt();
         }
-        for (int i : arr) {
-            System.out.print(i+" ");
+        // for (int i : arr) {
+        //     System.out.print(i+" ");
+        // }
+        // finding largest element in array
+        int largest=0;
+        for(int i=1; i<arr.length; i++){
+            if(arr[largest] < arr[i]){
+                 arr[largest]=arr[i];
+            }
         }
+        System.out.println("Largest : "+arr[largest]);
     }
 
 }
